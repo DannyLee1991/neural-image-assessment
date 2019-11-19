@@ -1,6 +1,6 @@
 import numpy as np
 import argparse
-from path import Path
+from pathlib import Path
 
 from keras.models import Model
 from keras.layers import Dense, Dropout
@@ -78,5 +78,3 @@ with tf.device('/CPU:0'):
 
         for i, (name, score) in enumerate(score_list):
             print("%d)" % (i + 1), "%s : Score = %0.5f" % (name, score))
-
-

@@ -1,6 +1,6 @@
 import numpy as np
 import argparse
-from path import Path
+from pathlib import Path
 
 from keras.models import Model
 from keras.layers import Dense, Dropout
